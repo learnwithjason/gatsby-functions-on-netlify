@@ -1,15 +1,2 @@
-[functions]
-  node_bundler = "esbuild"
-
-[[redirects]]
-  from = "/api/hello"
-  to = "/api/hello"
-  status = 200
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-
 [[plugins]]
   package = "@netlify/plugin-gatsby"
